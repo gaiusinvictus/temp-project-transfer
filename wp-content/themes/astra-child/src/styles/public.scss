@@ -1,0 +1,139 @@
+@import 'include/variables';
+@import 'include/mixins';
+@import 'include/grid';
+@import 'include/forms';
+// @import 'include/typography';
+
+.main-header-bar.ast-sticky-active {
+	box-shadow: none;
+}
+
+/*
+ * JETPACK SHARING
+ */
+.sharedaddy {
+	.sd-title {
+		@include invisible();
+	}
+	.sd-content, .sd-social-icon-text .sd-content {
+		ul {
+			@include flexbox( 'row' );
+			li {
+				margin: 0;
+				flex: 1;
+				&.share-end {
+					display: none;
+				}
+				a.sd-button {
+					display: block;
+					width: 100%;
+					text-align: center;
+					border-radius: 0 !important;
+					border: none !important;
+					box-shadow: none !important;
+					padding: .809em;
+					// font-family: $sans-serif;
+					font-size: .9rem;
+					span {
+						display: none;
+					}
+				}
+				&.share-facebook {
+					a.sd-button {
+						background-color: $facebook-color;
+						color: #fff !important;
+						&:hover, &:focus {
+							background-color: darken( $facebook-color, 5% );
+							color: #fff !important;
+						}
+					}
+				}
+				&.share-twitter {
+					a.sd-button {
+						background-color: $twitter-color;
+						color: #fff !important;
+						&:hover, &:focus {
+							background-color: darken( $twitter-color, 5% );
+							color: #fff !important;
+						}
+					}
+				}
+				&.share-pinterest {
+					a.sd-button {
+						background-color: $pinterest-color;
+						color: #fff !important;
+						&:hover, &:focus {
+							background-color: darken( $pinterest-color, 5% );
+							color: #fff !important;
+						}
+					}
+				}
+				&.share-linkedin {
+					a.sd-button {
+						background-color: $linkedin-color;
+						color: #fff !important;
+						&:hover, &:focus {
+							background-color: darken( $linkedin-color, 5% );
+							color: #fff !important;
+						}
+					}
+				}
+				&.share-reddit {
+					a.sd-button {
+						background-color: $reddit-color;
+						color: #fff !important;
+						&:hover, &:focus {
+							background-color: darken( $reddit-color, 5% );
+							color: #fff !important;
+						}
+					}
+				}
+				&.share-tumblr {
+					a.sd-button {
+						background-color: $tumblr-color;
+						color: #fff !important;
+						&:hover, &:focus {
+							background-color: darken( $tumblr-color, 5% );
+							color: #fff !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// .sharedaddy {
+// 	.sd-block {
+// 		.sd-title {
+// 			display: none;
+// 		}
+// 		.sd-content {
+// 			> ul {
+// 				margin: 0;
+// 				li[class*='share-'] {
+// 					margin: 0 $gutter;
+// 					display: inline-block;
+// 					a.sd-button {
+// 						margin: 0;
+// 					}
+// 					&.share-facebook,
+// 					&.share-linkedin,
+// 					&.share-twitter  {
+// 						a.sd-button {
+// 							background: $primary-color !important;
+// 							opacity: .85;
+// 							box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+// 							transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+// 							&:hover,
+// 							&:focus {
+// 								opacity: 1;
+// 								box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
